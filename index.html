@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="home" class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <h1 class="font">BootstrapMarket</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="menu-navegacao" class="navbar-collapse collapse justify-content-end">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="#home">
+                            <i class="bi bi-house me-1 fs-5"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#nossas-lojas">
+                            <i class="bi bi-shop me-1 fs-5"></i>
+                            Nossas lojas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">
+                            <i class="bi bi-info-circle me-1 fs-5"></i>
+                            Ajuda/Contato
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">
+                            <i class="bi bi-cart4 me-1 fs-5"></i>
+                            Carrinho de compras
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="cabecalho" data-bs-spy="scroll" data-bs-smooth-scroll="true">
+        <section id="carrousel-de-imagens">
+            <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="w-100" src="images/carousel-images/biscoitos.png" alt="Imagem de um pacote de sucrilhos">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100" src="images/carousel-images/nescau.png" alt="Banner da pasta de dentes colgate">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100" src="images/carousel-images/pampers.png" alt="Imagem da Fralda Pampers">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center pb-5 fw-bold">
+                        <i class="bi bi-bag-plus"></i>
+                        Nossos Produtos
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-produtos">
+                            <button type="button" class="nav-link active fw-bold text-start" data-bs-toggle="tab" data-bs-target="#bebidas">Bebidas</button>
+                            <button type="button" class="nav-link fw-bold text-start" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas">Bebidas Alcóolicas</button>
+                            <button type="button" class="nav-link fw-bold text-start" data-bs-toggle="tab" data-bs-target="#sucos">Sucos</button>
+                            <button type="button" class="nav-link fw-bold text-start" data-bs-toggle="tab" data-bs-target="#frutas">Frutas</button>
+                            <button type="button" class="nav-link fw-bold text-start" data-bs-toggle="tab" data-bs-target="#verduras">Verduras</button>
+                            <button type="button" class="nav-link fw-bold text-start" data-bs-toggle="tab" data-bs-target="#biscoitos">Bolachas e Biscoitos</button>
+                            <button type="button" class="nav-link fw-bold text-start" data-bs-toggle="tab" data-bs-target="#limpeza">Produtos de Limpeza</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div id="bebidas" class="tab-pane active">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas/coca-cola-lata.png" alt="Lata de Coca cola">
+                                        <h5>Lata Coca-Cola 350ml</h5>
+                                        <p>R$ 2,69</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas/coca-cola-garrafa.png" alt="Garrafa de Coca cola">
+                                        <h5>Garrafa Coca-Cola 1,5L</h5>
+                                        <p>R$ 5,99</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas/guaraná-lata.png    " alt="Lata de Guaraná">
+                                        <h5>Lata Guaraná 350ml</h5>
+                                        <p>R$ 2,29</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas/guaraná-garrafa.png" alt="Garrafa de Coca cola">
+                                        <h5>Garrafa Guaraná 2L</h5>
+                                        <p>R$ 6,49</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas/fanta-lata.png" alt="Lata de Fanta">
+                                        <h5>Lata Fanta Laranja 350ml</h5>
+                                        <p>R$ 6,49</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas/fanta-garrafa.png" alt="Garrafa de Fanta">
+                                        <h5>Garrafa Fanta Laranja 2L</h5>
+                                        <p>R$ 6,49</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="bebidas-alcoolicas" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas-alcoolicas/brahma-lata.png" alt="Lata de Brahma Duplo Malte">
+                                        <h5>Brahma Duplo Malte lata 350ml</h5>
+                                        <p>R$ 4,52</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas-alcoolicas/brahma-lata-pack.png" alt="Pack de lata de Brahma Chopp">
+                                        <h5>Pack Brahma lata 350ml</h5>
+                                        <p>R$ 41,92</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas-alcoolicas/heineken.png" alt="Long neck de Heineken">
+                                        <h5>Long Neck Heineken 330ml</h5>
+                                        <p>R$ 5,52</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas-alcoolicas/heineken-pack.png" alt="Pack de long neck de Heineken">
+                                        <h5>Pack Heineken c/ 6 Uni 330ml</h5>
+                                        <p>R$ 32,90</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas-alcoolicas/budweiser-lata.png" alt="Lata de Budweiser">
+                                        <h5>Budweiser lata 350ml</h5>
+                                        <p>R$ 3,96</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img class="d-block w-100" src="images/produtos/bebidas-alcoolicas/budweiser-garrafa.png" alt="Garrafa de Budweiser">
+                                        <h5>Budweiser garrafa 600ml</h5>
+                                        <p>R$ 6,99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sucos" class="tab-pane">
+                                <div class="row">
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/sucos/suco-guaraná.png" alt="Suco tang de guaraná">
+                                            <h5>Suco Tang de Guaraná</h5>
+                                            <p>R$ 0,90</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/sucos/suco-abacaxi.png" alt="Suco tang de abacaxi">
+                                            <h5>Suco Tang de Abacaxi</h5>
+                                            <p>R$ 0,90</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/sucos/suco-laranja.png" alt="Suco tang de laranja">
+                                            <h5>Suco Tang de Laranja</h5>
+                                            <p>R$ 0,90</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/sucos/suco-limão.png" alt="Suco tang de limão">
+                                            <h5>Suco Tang de Limão</h5>
+                                            <p>R$ 0,90</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/sucos/suco-morango.png" alt="Suco tang de morango">
+                                            <h5>Suco Tang de Morango</h5>
+                                            <p>R$ 0,90</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/sucos/suco-uva.png" alt="Suco tang de uva">
+                                            <h5>Suco Tang de Uva</h5>
+                                            <p>R$ 0,90</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="frutas" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/frutas/maça-argentina.png" alt="Maça argentina">
+                                            <h5>Maça Argentina</h5>
+                                            <p>R$ 3,29 Uni</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/frutas/laranja-do-céu.png" alt="Laranja do céu">
+                                            <h5>Laranja do Céu</h5>
+                                            <p>R$ 4,21 Kg</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/frutas/abacate.png" alt="Abacate">
+                                            <h5>Abacate</h5>
+                                            <p>R$ 6,29 Kg</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/frutas/mamão-formosa.png" alt="Mamão formosa">
+                                            <h5>Mamão Formosa</h5>
+                                            <p>R$ 7,69 Kg</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/frutas/abacaxi-havai.png" alt="Abacaxi havaí">
+                                            <h5>Abacaxi Havaí</h5>
+                                            <p>R$ 7,69 Uni</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/frutas/pêra.png" alt="Pêra">
+                                            <h5>Pêra</h5>
+                                            <p>R$ 8,69 Kg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="verduras" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/verduras/alface-crespa.png" alt="Alface crespa">
+                                            <h5>Alface Crespa</h5>
+                                            <p>R$ 3,98 pacote</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/verduras/couve.png" alt="Couve">
+                                            <h5>Couve</h5>
+                                            <p>R$ 2,99 1 maço</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/verduras/brócolis.png" alt="Brócolis">
+                                            <h5>Brócolis</h5>
+                                            <p>R$ 1,29 Uni</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/verduras/espinafre.png" alt="Espinafre">
+                                            <h5>Espinafre</h5>
+                                            <p>R$ 2,69 1 maço</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/verduras/couve-flor.png" alt="Couve-flor">
+                                            <h5>Couve-flor</h5>
+                                            <p>R$ 6,99 bandeja 300g</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/verduras/agrião.png" alt="">
+                                            <h5>Agrião</h5>
+                                            <p>R$ 3,89 1 maço</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="biscoitos" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/bolachas e biscoitos/biscoito-oreo.png" alt="Biscoito Oreo">
+                                            <h5>Biscoito Oreo</h5>
+                                            <p>R$ 2,22</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/bolachas e biscoitos/bolacha-negresco.png" alt="Bolacha Negresco">
+                                            <h5>Bolacha Negresco eclipse</h5>
+                                            <p>R$ 2,99</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/bolachas e biscoitos/merendinha-isabela.png" alt="Merendinha isabela">
+                                            <h5>Merendinha sabor chocolate - Isabela</h5>
+                                            <p>R$ 2,18</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/bolachas e biscoitos/bolacha-tortinhas.png" alt="Bolacha tortinhas">
+                                            <h5>Tortinhas sabor Bombom - Marilan</h5>
+                                            <p>R$ 3,69</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/bolachas e biscoitos/biscoito-amanteigado-isabela.png" alt="Biscoito amanteigado isabela">
+                                            <h5>Biscoitos amanteigados - Isabela</h5>
+                                            <p>R$ 6,99</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/bolachas e biscoitos/cookies-bauducco.png" alt="Cookies bauducco">
+                                            <h5>Cookies com gotas de chocolate - Bauducco</h5>
+                                            <p>R$ 4,49</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="limpeza" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/produtos de limpeza/bom-ar.png" alt="Bom air">
+                                            <h5>Bom air 360ml</h5>
+                                            <p>R$ 10,99</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/produtos de limpeza/desinfetante-lavanda.png" alt="Desinfetante">
+                                            <h5>Desinfetante lavanda 5L</h5>
+                                            <p>R$ 14,99</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/produtos de limpeza/esponja-dupla-face.png" alt="Esponja dupla face">
+                                            <h5>Esponja dupla face - Scotch Brite</h5>
+                                            <p>R$ 9,99 pacote c/ 10 Uni</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/produtos de limpeza/mop-esfregão.png" alt="Esfregão">
+                                            <h5>MOP - Esfregão giratório c/ balde 13L</h5>
+                                            <p>R$ 90,90</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/produtos de limpeza/detergente-neutro.png" alt="Detergente neutro">
+                                            <h5>Detergente neutro 500ml - Ypê</h5>
+                                            <p>R$ 2,99 Uni</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img class="d-block w-100" src="images/produtos/produtos de limpeza/desengordurante-mr-musculo.png" alt="Desengordurante">
+                                            <h5>Desengordurante 500ml - Mr. Músculo</h5>
+                                            <p>R$ 20,00 Uni</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="nossas-lojas" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center pb-5 fw-bold">
+                        <i class="bi bi-shop"></i>
+                        Nossas Lojas
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <img class="w-100" src="images/lojas/uma-cesta-de-supermercado-com-uma-alca-que-diz-maca.jpg" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="info-loja">
+                            <h2 class="text-color">Loja do Local#1</h2>
+                            <p class="text-start">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maiores ad vel provident, in atque laboriosam aspernatur, molestias ipsa voluptatem illum modi laborum deserunt aut reprehenderit, eos maxime rerum quibusdam.
+                            </p>
+                            <ul class="ul-style">
+                                <li>
+                                    <i class="bi bi-whatsapp me-1 fs-5"></i>
+                                    Telefone: <span class="fw-bold">(00) 0 0000-0000</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-envelope me-1 fs-5"></i>
+                                    E-mail: <span class="fw-bold">contatolojalocal#1@gmail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 pb-5">
+                    <div class="col-md-7">
+                        <div class="info-loja">
+                            <h2 class="text-color">Loja do Local#2</h2>
+                            <p class="text-start">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maiores ad vel provident, in atque laboriosam aspernatur, molestias ipsa voluptatem illum modi laborum deserunt aut reprehenderit, eos maxime rerum quibusdam.
+                            </p>
+                            <ul class="ul-style">
+                                <li>
+                                    <i class="bi bi-whatsapp me-1 fs-5"></i>
+                                    Telefone: <span class="fw-bold">(11) 1 1111-1111</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-envelope me-1 fs-5"></i>
+                                    E-mail: <span class="fw-bold">contatolojalocal#2@gmail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="w-100" src="images/lojas/uma-cesta-de-supermercado-com-uma-alca-que-diz-maca.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <img class="w-100" src="images/lojas/uma-cesta-de-supermercado-com-uma-alca-que-diz-maca.jpg" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="info-loja">
+                            <h2 class="text-color">Loja do Local#3</h2>
+                            <p class="text-start">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maiores ad vel provident, in atque laboriosam aspernatur, molestias ipsa voluptatem illum modi laborum deserunt aut reprehenderit, eos maxime rerum quibusdam.
+                            </p>
+                            <ul class="ul-style">
+                                <li>
+                                    <i class="bi bi-whatsapp me-1 fs-5"></i>
+                                    Telefone: <span class="fw-bold">(22) 2 2222-2222</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-envelope me-1 fs-5"></i>
+                                    E-mail: <span class="fw-bold">contatolojalocal#3@gmail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
