@@ -10,6 +10,8 @@ body {
     color: #fff;
 }
 
+/* header */
+
 header {
     background-color: #F20F38;
 }
@@ -43,10 +45,6 @@ header .nav .nav-link.active {
     background-color: #FF9FA8;
 }
 
-#nossas-lojas {
-    background-color: #FFCCD2;
-}
-
 .col-md-2 img {
     overflow: hidden;
     transition: .5s ease-in-out;
@@ -57,14 +55,10 @@ header .nav .nav-link.active {
     transform: scale(2);
 }
 
-.ul-style {
-    list-style: none;
-    padding: 0px;
-}
+/* seção nossas lojas */
 
-.ul-style li a {
-    text-decoration: none;
-    color: #000;
+#nossas-lojas {
+    background-color: #FFCCD2;
 }
 
 .text-color {
@@ -78,6 +72,70 @@ header .nav .nav-link.active {
     border-radius: 16px;
 }
 
+/* footer */
+
+.ul-style {
+    list-style: none;
+    padding: 0px;
+}
+
+.ul-style li a {
+    text-decoration: none;
+    color: #000;
+}
+
 #contato {
     background-color: #F2F2F2;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+    
+    /* seção produtos */
+
+    #produtos img {
+        max-width: 50px;
+    }
+
+    /* seção nossas lojas */
+
+    .info-loja {
+        margin-top: 20px;
+    }
+
+    #info-loja-middle {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    /* footer */
+
+    footer .row {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 2%;
+    }
+}
+
+/* Tablets */
+
+@media screen and (min-width: 768px) {
+
+    /* seção produtos */
+
+    .col-md-10 .row{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .text-wrap h5, .text-wrap p{
+        text-wrap: nowrap;
+    }
+
+    footer .row {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        text-wrap: nowrap;
+    }
 }
