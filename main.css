@@ -62,13 +62,22 @@ header .nav .nav-link.active {
     padding: 0px;
 }
 
+.ul-style li a {
+    text-decoration: none;
+    color: #000;
+}
+
 .text-color {
     font-family: 'Great Vibes', cursive;
     color: #F20F38;
 }
 
 .info-loja {
-    background-color: #fff;
+    background-color: #F2F2F2;
     padding: 18px;
     border-radius: 16px;
+}
+
+#contato {
+    background-color: #F2F2F2;
 }
